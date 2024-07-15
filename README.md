@@ -1,5 +1,7 @@
 # Svelte 5 css injected error
 
+# Fixed in Svelte 5.0.0-next.184
+
 When using `css: injected`, if a Svelte component is mounted to a detached node and the node is never attached to the DOM or it's attached to the DOM after microtasks have run, an error will be thrown, which stops the component from mounting correctly.
 
 This case works:
